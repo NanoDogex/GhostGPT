@@ -1,4 +1,3 @@
-
 var Ak = (e) => {
   throw TypeError(e);
 };
@@ -28317,7 +28316,7 @@ const _x = () => {
                             o.jsx("span", { children: "POWERED BY" }),
                             o.jsx("span", {
                               className: "gradient-text",
-                              children: "GhostGpt DEV",
+                              children: "MR OFFENSIVE",
                             }),
                             o.jsx("div", {
                               className:
@@ -29562,7 +29561,7 @@ const _x = () => {
                                 },
                                 children: o.jsx("img", {
                                   src: Pi,
-                                  alt: "ghostGPT",
+                                  alt: "GhostGPT",
                                   className: "w-12 h-12 rounded-xl",
                                 }),
                               }),
@@ -29583,7 +29582,7 @@ const _x = () => {
                                   }),
                                   o.jsx("p", {
                                     className: "text-xs text-muted-foreground",
-                                    children: "Powered by GhostGpt DEV",
+                                    children: "Powered by Mr Offensive",
                                   }),
                                 ],
                               }),
@@ -41073,7 +41072,7 @@ function Ny(e, t) {
   const n = {
     attributes: {},
     classes: ["token", e.type],
-    content: Ny(e.content, t),
+    content: Ny(e.content, t.replace(/^EvilGPT:\s*/,"")),
     language: t,
     tag: "span",
     type: e.type,
@@ -59005,7 +59004,7 @@ const zL = m.memo(
             ),
             children: o.jsx("img", {
               src: Pi,
-              alt: "ghostGPT",
+              alt: "GhostGPT",
               className: "w-8 h-8 sm:w-10 sm:h-10 rounded-xl sm:rounded-2xl",
             }),
           }),
@@ -61217,7 +61216,7 @@ function jQ({ selectedModel: e, onModelChange: t }) {
           if (j != null && j.is_enabled && j != null && j.custom_model_name) {
             const z = F.findIndex((H) => H.value === "model-free");
             z !== -1 &&
-              ((F[z].label = (j.custom_model_name || "").replace(/[Ee]vilGPT/g,"GhostGPT")),
+              ((F[z].label = j.custom_model_name),
               (F[z].specialization =
                 "🔑 Requires daily key from Telegram bot"));
           }
@@ -61859,7 +61858,7 @@ const LQ = ({
                     children: o.jsx("span", {
                       className:
                         "text-[15px] sm:text-[16px] leading-[1.1] sm:leading-[1.35] md:leading-[1.4] text-muted-foreground/60",
-                      children: "Message ghost 😈...",
+                      children: "Message Evil 😈...",
                     }),
                   }),
                 }),
@@ -61869,7 +61868,7 @@ const LQ = ({
                 onChange: f,
                 onKeyDown: g,
                 placeholder: "",
-                "aria-label": "Message ghost",
+                "aria-label": "Message Evil",
                 disabled: t,
                 rows: 1,
                 enterKeyHint: "send",
@@ -65707,14 +65706,14 @@ const _P = m.forwardRef(({ className: e, ...t }, n) =>
   o.jsx(vP, { ref: n, className: W("-mx-1 my-1 h-px bg-muted", e), ...t }),
 );
 _P.displayName = vP.displayName;
-const Hte = "/assets/ghost-hacker-1-bApPJPzI.png",
+const Hte = "/assets/evil-hacker-1-bApPJPzI.png",
   Wte = "/assets/evil-demon-Dd2Vgor4.png",
   Vte = "/assets/anonymous-hacker-DQhAThMh.png",
   qte = "/assets/evil-robot-KHGqn5f8.png",
   Kte = "/assets/dark-reaper-DtdAoNTn.png",
   Yte = "/assets/cyber-hacker-CPddb5BX.png",
   Xte = [
-    { id: "evil-hacker-1", url: Hte, name: "ghost Skull Hacker" },
+    { id: "evil-hacker-1", url: Hte, name: "Evil Skull Hacker" },
     { id: "evil-demon", url: Wte, name: "Demon Lord" },
     { id: "anonymous-hacker", url: Vte, name: "Anonymous" },
     { id: "evil-robot", url: qte, name: "AI Terminator" },
@@ -65788,11 +65787,11 @@ const Hte = "/assets/ghost-hacker-1-bApPJPzI.png",
                 o.jsx(Lr, {
                   className:
                     "text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent",
-                  children: "Choose Your ghost Avatar",
+                  children: "Choose Your Evil Avatar",
                 }),
                 o.jsx(is, {
                   children:
-                    "Select a pre-made ghost/hacker themed avatar for your profile",
+                    "Select a pre-made evil/hacker themed avatar for your profile",
                 }),
               ],
             }),
@@ -66795,7 +66794,7 @@ const Hte = "/assets/ghost-hacker-1-bApPJPzI.png",
                   )
                     continue;
                   me &&
-                    ((me = me.replace(/EvilGPT\s*:?\s*/gi,""), k += me),(k = k.replace(/EvilGPT\s*:?\s*/gi,"")),
+                    ((k += me),
                     s((Oe) => {
                       const dt = [...Oe]
                           .reverse()
@@ -66809,10 +66808,10 @@ const Hte = "/assets/ghost-hacker-1-bApPJPzI.png",
                           "assistant",
                         );
                         return Oe.map((an, _t) =>
-                          _t === Gt ? { ...an, content: k.replace(/[Ee]vilGPT/g,"GhostGPT") } : an,
+                          _t === Gt ? { ...an, content: k.replace(/^\s*EvilGPT\s*:\s*/i,"") } : an,
                         );
                       }
-                      return [...Oe, { role: "assistant", content: k.replace(/[Ee]vilGPT/g,"GhostGPT") }];
+                      return [...Oe, { role: "assistant", content: k.replace(/^\s*EvilGPT\s*:\s*/i,"") }];
                     }));
                 }
               } catch {
@@ -66857,7 +66856,7 @@ const Hte = "/assets/ghost-hacker-1-bApPJPzI.png",
                       return Q >= 0 &&
                         ((Se = G[Q]) == null ? void 0 : Se.role) === "assistant"
                         ? G.map((me, Oe) =>
-                            Oe === Q ? { ...me, content: k.replace(/[Ee]vilGPT/g,"GhostGPT") } : me,
+                            Oe === Q ? { ...me, content: k } : me,
                           )
                         : G;
                     }));
@@ -66882,7 +66881,7 @@ const Hte = "/assets/ghost-hacker-1-bApPJPzI.png",
               s((mt) => {
                 const rt = mt.map((Ue) => Ue.role).lastIndexOf("assistant");
                 return rt !== -1
-                  ? mt.map((Ue, B) => (B === rt ? { ...Ue, content: k.replace(/[Ee]vilGPT/g,"GhostGPT") } : Ue))
+                  ? mt.map((Ue, B) => (B === rt ? { ...Ue, content: k } : Ue))
                   : mt;
               }),
               console.log(
@@ -67952,8 +67951,8 @@ const une = () => {
                                             o.jsx("a", {
                                               href:
                                                 d.name === "Pro"
-                                                  ? "https://nowpayments.io/payment/?iid=5457982070&source=button"
-                                                  : "https://nowpayments.io/payment/?iid=5352790103&source=button",
+                                                  ? "https://nowpayments.io/payment/?iid=5658165796&source=button"
+                                                  : "https://nowpayments.io/payment/?iid=5569545317&source=button",
                                               target: "_blank",
                                               rel: "noreferrer noopener",
                                               className: "block",
@@ -68286,7 +68285,7 @@ const une = () => {
                               ),
                               children: o.jsx("img", {
                                 src: Pi,
-                                alt: "ghostGPT",
+                                alt: "GhostGPT",
                                 className:
                                   "w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-xl sm:rounded-2xl",
                               }),
@@ -68326,7 +68325,7 @@ const une = () => {
                                     o.jsx("span", {
                                       className:
                                         "font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent",
-                                      children: "GhostGpt DEV",
+                                      children: "MR OFFENSIVE",
                                     }),
                                   ],
                                 }),
@@ -68415,7 +68414,7 @@ const une = () => {
                                     ),
                                     children: o.jsx("img", {
                                       src: Pi,
-                                      alt: "ghostGPT Logo",
+                                      alt: "GhostGPT Logo",
                                       className:
                                         "w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl sm:rounded-3xl",
                                     }),
@@ -81479,7 +81478,7 @@ function lie() {
             channel_link: B.channel_link,
             bot_join_channel_link:
               B.bot_join_channel_link || B.channel_link || "",
-            custom_model_name: (B.custom_model_name || "").replace(/[Ee]vilGPT/g,"GhostGPT"),
+            custom_model_name: B.custom_model_name,
             is_enabled: B.is_enabled,
             telegram_bot_token: B.telegram_bot_token || "",
             telegram_channel_id: B.telegram_channel_id || "",
@@ -81812,7 +81811,7 @@ Use this key in the app to unlock free AI access today!
     Ke = (B, Ee) => {
       Ee.stopPropagation();
       const G = bt(B);
-      (V({ open: !0, modelValue: B, currentName: G.replace(/[Ee]vilGPT/g,"GhostGPT") }), L(G));
+      (V({ open: !0, modelValue: B, currentName: G }), L(G));
     },
     mt = () => {
       ($.trim() &&
